@@ -16,9 +16,8 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"> Home </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,15 +30,15 @@
               Projects
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Academic </a></li>
-              <li><a class="dropdown-item" href="#"> Professionals </a></li>
+              <li><a class="dropdown-item" href="#academics">Academic </a></li>
+              <li><a class="dropdown-item" href="#professionals"> Professionals </a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About me</a>
+            <a class="nav-link" href="#about">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> Contacts </a>
+            <a class="nav-link" href="#contact"> Contacts </a>
           </li>
         </ul>
       </div>
@@ -49,9 +48,9 @@
   <button onclick="topFunction()" id="toTop" title="Go to top"> Top </button>
 
   <!-- Introduction Section -->
-  <header class="bg-black text-white text-center py-5">
+  <header class="text-white text-center py-3">
     <div class="container">
-      <img src="images/avatar.png" id="avatar" class="rounded mb-3" data-bs-toggle="popover"
+      <img src="static/images/avatar.png" id="avatar" class="rounded mb-3" data-bs-toggle="popover"
         title="Welcome to my profile!" data-bs-content="Here you can find my past projects and info.">
       <h1> Pedro Tomé </h1>
       <p class="lead"> Quality Assurance Enthusiast </p>
@@ -60,15 +59,15 @@
   </header>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-5">
+  <section id="projects" class="py-3">
     <div class="container">
-      <h2 class="mb-4"> Academic Projects </h2>
+      <h2 class="mb-4" id="academics"> Academic Projects </h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
 
         <div class="col">
           <div class="card">
             <a data-bs-toggle="modal" data-bs-target="#ProjectOOP">
-              <img src="images/OOP-Java.jpg" class="card-img-top project-img" alt="Projeto 1">
+              <img src="static/images/OOP-Java.jpg" class="card-img-top project-img" alt="Projeto 1">
             </a>
             <div class="card-body">
               <h5 class="card-title"> Sokoban </h5>
@@ -94,7 +93,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="images/Dababases.jpg" class="card-img-top project-img" alt="Projeto 1">
+            <img src="static/images/Dababases.jpg" class="card-img-top project-img" alt="Projeto 1">
             <div class="card-body">
               <h5 class="card-title"> Musisys </h5>
               <p class="card-text">Project for Curricular Unit: Databases </p>
@@ -105,12 +104,12 @@
       </div>
 
       <hr>
-      <h2 class="mb-4"> Professional Projects </h2>
+      <h2 class="mb-4" id="professionals"> Professional Projects </h2>
 
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="images/NOS.png" class="img-fluid rounded-start m-2" alt="projeto-nos">
+            <img src="static/images/NOS.png" class="img-fluid rounded-start m-2" alt="projeto-nos">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -134,7 +133,7 @@
       <div class="row ">
         <div class="col-lg-4">
           <figure class="figure">
-            <img src="images/Profile.PNG" class="figure-img img-fluid rounded" alt="Creator">
+            <img src="static/images/Profile.PNG" class="figure-img img-fluid rounded" alt="Creator">
             <figcaption class="figure-caption"> The first step for a QA, it's to assure the quality of its sleep
             </figcaption>
           </figure>
