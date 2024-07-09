@@ -20,26 +20,31 @@ const handleMouseDownOnce = () => {
 
 window.addEventListener("keydown", handleFirstTab);
 
-let mybutton = document.getElementById("myBtn");
-
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+function loadContent(path, project) {
+  fetch(path)
+    .then(response => response.text()).then(data => { document.getElementById(project).innerHTML = data; }).catch(error => console.error('Error loading content:', error));
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+
+  loadContent('static/projects/sokoban.html', 'sokoban');
+  loadContent('static/projects/musisys.html', 'musisys');
+
+  var mybutton = document.getElementById("toTop");
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.documentElement.scrollTop = 0;
+  }
+
   var popoverTrigger = document.getElementById("avatar");
   var popover = new bootstrap.Popover(popoverTrigger, {
     trigger: "manual",

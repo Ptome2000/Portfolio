@@ -1,196 +1,340 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="index.js"></script>
-</head>
-
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#academics">Academic </a></li>
-              <li><a class="dropdown-item" href="#professionals"> Professionals </a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact"> Contacts </a>
-          </li>
-        </ul>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="#academics">Academic </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#professionals">
+                    Professionals
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications"> Certifications </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> Contacts </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <button onclick="topFunction()" id="toTop" title="Go to top"> Top </button>
+    <a class="btn btn-secondary" id="toTop" href="#"
+      ><i class="bi bi-arrow-up foot"></i
+    ></a>
 
-  <!-- Introduction Section -->
-  <header class="text-white text-center py-3">
-    <div class="container">
-      <img src="static/images/avatar.png" id="avatar" class="rounded mb-3" data-bs-toggle="popover"
-        title="Welcome to my profile!" data-bs-content="Here you can find my past projects and info.">
-      <h1> Pedro Tomé </h1>
-      <p class="lead"> Quality Assurance Enthusiast </p>
-      </button>
-    </div>
-  </header>
+    <!-- Introduction Section -->
+    <header class="text-white text-center py-3">
+      <div class="container">
+        <img
+          src="static/images/avatar.png"
+          id="avatar"
+          class="rounded mb-3"
+          data-bs-toggle="popover"
+          title="Welcome to my profile!"
+          data-bs-content="Here you can find my past projects and info."
+        />
+        <h1>Pedro Tomé</h1>
+        <p class="lead">Quality Assurance Enthusiast</p>
+      </div>
+    </header>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-3">
-    <div class="container">
-      <h2 class="mb-4" id="academics"> Academic Projects </h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-
+    <!-- Skills Section -->
+    <section id="skills" class="py-3">
+      <div class="container">
+        <h2 class="mb-4">Top Skills</h2>
+        <hr />
+        <div class="row g-2"></div>
         <div class="col">
-          <div class="card">
-            <a data-bs-toggle="modal" data-bs-target="#ProjectOOP">
-              <img src="static/images/OOP-Java.jpg" class="card-img-top project-img" alt="Projeto 1">
-            </a>
-            <div class="card-body">
-              <h5 class="card-title"> Sokoban </h5>
-              <p class="card-text"> Project for Curricular Unit: Object Oriented Programming </p>
+          <p>Python</p>
+        </div>
+        <div class="col skills python">90%</div>
+      </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="py-3">
+      <div class="container">
+        <h2 class="mb-4" id="academics">Academic Projects</h2>
+        <hr />
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <a data-bs-toggle="modal" data-bs-target="#ProjectOOP">
+                <img
+                  src="static/images/POO/sokoban.jpg"
+                  class="card-img-top project-img"
+                  alt="Projeto 1"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Sokoban</h5>
+                <p class="card-text">
+                  Project for Curricular Unit: Object Oriented Programming
+                </p>
+              </div>
             </div>
+            <div id="sokoban"></div>
           </div>
 
-          <div class="modal fade" id="ProjectOOP" tabindex="-1" aria-labelledby="ProjectOOPLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="ProjectOOPLabel"> Object Oriented Programming </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
+          <div class="col">
+            <div class="card">
+              <a data-bs-toggle="modal" data-bs-target="#ProjectDB">
+                <img
+                  src="static/images/DB/musisys.jpg"
+                  class="card-img-top project-img"
+                  alt="Projeto 2"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Musisys</h5>
+                <p class="card-text">Project for Curricular Unit: Databases</p>
+              </div>
+            </div>
+            <div id="musisys"></div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <span class="ribbon">NEW</span>
+              <a data-bs-toggle="modal" data-bs-target="#ProjectDIAM">
+                <img
+                  src="static/images/DIAM/iscte.jpg"
+                  class="card-img-top project-img"
+                  alt="Projeto 3"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Fenix-Menos</h5>
+                <p class="card-text">
+                  Project for Curricular Unit: Development for the Internet and
+                  Mobile Devices
+                </p>
+              </div>
+            </div>
+            <div id=""></div>
+          </div>
+        </div>
+
+        <h2 class="mb-4" id="professionals">Professional Projects</h2>
+        <hr />
+
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="static/images/NOS.png"
+                class="img-fluid rounded-start m-2"
+                alt="projeto-nos"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Project UMA</h5>
+                <p class="card-text">
+                  Member of the DevOps & Automation team with the following
+                  functions:
+                </p>
+                <ul>
+                  <li>Creation of new Python tests for Set-top Boxes;</li>
+                </ul>
               </div>
             </div>
           </div>
-
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="static/images/Dababases.jpg" class="card-img-top project-img" alt="Projeto 1">
-            <div class="card-body">
-              <h5 class="card-title"> Musisys </h5>
-              <p class="card-text">Project for Curricular Unit: Databases </p>
-            </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-3">
+      <div class="container">
+        <h2 class="mb-4">Certifications</h2>
+        <hr />
+        <div class="card h-50">
+          <div class="card-header text-center fw-bold">Katalon</div>
+          <div class="row gy-5">
+            <div class="col-4">
+              <a href="https://academy.katalon.com/mcertificate/65bcf1321b29d" target="_blank">
+              <img
+                src="static/images/certificates/katalon-practitioner-badge.png"
+                class="card-img img-fluid"
+                alt="katalon1"
+              />
+            </a>
           </div>
-
-        </div>
-      </div>
-
-      <hr>
-      <h2 class="mb-4" id="professionals"> Professional Projects </h2>
-
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="static/images/NOS.png" class="img-fluid rounded-start m-2" alt="projeto-nos">
+          <div class="col-4">
+            <a href="https://academy.katalon.com/mcertificate/65c38f03c5587" target="_blank">
+              <img
+                src="static/images/certificates/katalon-professional-badge.png"
+                class="card-img"
+                alt="katalon2"
+              />
+            </a>
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title"> Project UMA </h5>
-              <p class="card-text"> Member of the DevOps & Automation team with the following functions:</p>
-              <ul>
-                <li>Creation of new Python tests for Set-top Boxes;</li>
-              </ul>
-            </div>
+          <div class="col-4">
+            <a href="https://academy.katalon.com/mcertificate/65c4dc4c5802c" target="_blank">
+              <img
+                src="static/images/certificates/katalon-expert-badge.png"
+                class="card-img"
+                alt="katalon3"
+              />
+            </a>
+          </div>
           </div>
         </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- About me Section -->
-  <section id="about" class="bg-light py-3">
-    <div class="container">
-      <h2 class="mb-4"> About me </h2>
-      <div class="row ">
-        <div class="col-lg-4">
-          <figure class="figure">
-            <img src="static/images/Profile.PNG" class="figure-img img-fluid rounded" alt="Creator">
-            <figcaption class="figure-caption"> The first step for a QA, it's to assure the quality of its sleep
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-lg-6">
-
-          <p>
-            Curious and ambitious young man who intends to pursue further studies and acquire even more knowledge and
-            training.
-            I completed the course of Programming and Managing Computer Systems, with high skills in the field, acquired
-            at Escola Secundária do Forte da Casa.
-            I was involved in several programming projects, where I held various positions and performed various
-            functions.
-            Currently in the Noesis DevOps and Automation teams for a NOS PT project, working together with UX and Core
-            teams, while undertaking the new challenge of pursuing further studies at ISCTE.
-          </p>
-          <div class="d-grid gap-2 col-6 mx-auto"></div>
-
-          <a href="https://iscteiul365-my.sharepoint.com/:b:/g/personal/pmgte_iscte-iul_pt/EeGOzgeJmCFClm4R0bacJWwBGpcoaG-3iGno4_nas0VKgw?e=1ccAfQ"
-            target="_blank" class="btn btn-dark" type="button"> My Resume </a>
         </div>
       </div>
-    </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contacts Section -->
-  <section id="contact" class="bg-light py-3">
-    <div class="container">
-      <h2 class="mb-4"> Contacts </h2>
-      <div class="row">
-        <div class="col-lg-12">
-          <p> For more information, you can reach out via the following: </p>
-          <a type="button" class="btn btn-outline-primary mb-2" href="mailto: pedro.m.tome16@outlook.com">
-            pedro.m.tome16@outlook.com </a>
-            <a type="button" class="btn btn-outline-primary mb-2" href="mailto: pmgte@iscte-iul.pt">
-              pmgte@iscte-iul.pt </a>
-              <a type="button" class="btn btn-outline-primary mb-2" href="tel: 351932787673">
-                (+351) 932787673 </a>
+    <!-- About me Section -->
+    <section id="about" class="bg-light py-3">
+      <div class="container">
+        <h2 class="mb-4">About me</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <figure class="figure">
+              <img
+                src="static/images/Profile.PNG"
+                class="figure-img img-fluid rounded"
+                alt="Creator"
+              />
+              <figcaption class="figure-caption">
+                The first step for a QA is to assure the quality of its sleep
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              Curious and ambitious young man who intends to pursue further
+              studies and acquire even more knowledge and training. I completed
+              the course of Programming and Managing Computer Systems at Escola
+              Secundária do Forte da Casa and have high skills in the field. I
+              have been involved in several programming projects, where I held
+              various positions and performed various functions. Currently, I am
+              part of the Noesis DevOps and Automation teams for a NOS PT
+              project, working with UX and Core teams. I am also undertaking the
+              new challenge of pursuing further studies at ISCTE.
+            </p>
+            <div class="d-grid gap-2 col-6 mx-auto"></div>
+            <a
+              href="my-resume.pdf"
+              target="_blank"
+              class="btn btn-dark"
+              type="button"
+              >My Resume</a
+            >
+            <a href="" target="_blank" class="btn btn-secondary" type="button"> Skills Dossier </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <ul class="nav justify-content-center">
-        <li class="ms-3"><a href="https://github.com/Ptome2000"><i class="bi bi-github"></i></a></li>
-        <li class="ms-3"><a href="https://www.linkedin.com/in/tom%C3%A9pedro/?locale=en_US"><i
-              class="bi bi-linkedin"></i></a></li>
-      </ul>
-      <hr>
-      <p class="mb-0">© 2024 Pedro Tomé. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    <!-- Contacts Section -->
+    <section id="contact" class="bg-light py-3">
+      <div class="container">
+        <h2 class="mb-4">Contacts</h2>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>For more information, you can reach out via the following:</p>
+            <a
+              type="button"
+              class="btn btn-outline-primary mb-2"
+              href="mailto: pedro.m.tome16@outlook.com"
+            >
+              pedro.m.tome16@outlook.com
+            </a>
+            <a
+              type="button"
+              class="btn btn-outline-primary mb-2"
+              href="mailto: pmgte@iscte-iul.pt"
+            >
+              pmgte@iscte-iul.pt
+            </a>
+            <a
+              type="button"
+              class="btn btn-outline-primary mb-2"
+              href="tel: 351932787673"
+            >
+              (+351) 932787673
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
-
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="ms-3">
+            <a href="https://github.com/Ptome2000"
+              ><i class="bi bi-github foot"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a href="https://www.linkedin.com/in/tom%C3%A9pedro/?locale=en_US"
+              ><i class="bi bi-linkedin foot"></i
+            ></a>
+          </li>
+        </ul>
+        <hr />
+        <p class="mb-0">© 2024 Pedro Tomé. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
 </html>
