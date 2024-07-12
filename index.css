@@ -42,6 +42,10 @@ figure {
   max-width: 200px;
 }
 
+.progress {
+  height: 30px;
+}
+
 /*  Back to Top Button  */
 
 #toTop {
@@ -56,19 +60,6 @@ figure {
 #toTop:hover {
   background-color: #555;
 }
-
-/*  Skills  */
-
-* {box-sizing:border-box}
-
-.skills {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-}
-
-.python {width: 50%; background-color: #04AA6D;}
 
 /*  Projects Gallery  */
 

@@ -1,0 +1,134 @@
+[
+  {
+    "Year": "1st Year",
+    "Subject": "Introduction to Programming",
+    "Numeric Grade": 17,
+    "ECTS Grade": "-"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Algebra",
+    "Numeric Grade": 15,
+    "ECTS Grade": "B"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Stress Management",
+    "Numeric Grade": 13,
+    "ECTS Grade": "D"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Management and Information Systems in Organizations",
+    "Numeric Grade": 11,
+    "ECTS Grade": "-"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Personal Image Management",
+    "Numeric Grade": 15,
+    "ECTS Grade": "-"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Fundamentals of Computer Architecture",
+    "Numeric Grade": 17,
+    "ECTS Grade": "B"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Study Methods and Techniques",
+    "Numeric Grade": 16,
+    "ECTS Grade": "C"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Operating Systems",
+    "Numeric Grade": 12,
+    "ECTS Grade": "C"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Algorithms and Data Structures",
+    "Numeric Grade": 13,
+    "ECTS Grade": "-"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Financial Accounting for Business",
+    "Numeric Grade": 13,
+    "ECTS Grade": "C"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Probabilities and Statistics",
+    "Numeric Grade": 11,
+    "ECTS Grade": "D"
+  },
+  {
+    "Year": "1st Year",
+    "Subject": "Mathematical Analysis",
+    "Numeric Grade": 11,
+    "ECTS Grade": "D"
+  },
+  {
+    "Year": "2nd Year",
+    "Subject": "Databases",
+    "Numeric Grade": 17,
+    "ECTS Grade": "A"
+  },
+  {
+    "Year": "2nd Year",
+    "Subject": "Object Oriented Programming",
+    "Numeric Grade": 19,
+    "ECTS Grade": "A"
+  },
+  {
+    "Year": "2nd Year",
+    "Subject": "Investments and Financial Markets",
+    "Numeric Grade": 17,
+    "ECTS Grade": "A"
+  },
+  {
+    "Year": "2nd Year",
+    "Subject": "Fundamentals of Management Accounting",
+    "Numeric Grade": 15,
+    "ECTS Grade": "B"
+  },
+  {
+    "Year": "2nd Year",
+    "Subject": "Multivariate Data Analysis",
+    "Numeric Grade": 18,
+    "ECTS Grade": "A"
+  },
+  {
+    "Year": "2nd Year",
+    "Subject": "Fundamentals of Computer Networks",
+    "Numeric Grade": 17,
+    "ECTS Grade": "B"
+  },
+  {
+    "Year": "2nd Year",
+    "Subject": "Development for the Internet and Mobile Applications",
+    "Numeric Grade": 19,
+    "ECTS Grade": "A"
+  },
+  {
+    "Year": "2nd Year",
+    "Subject": "Design and Development of Information Systems",
+    "Numeric Grade": 16,
+    "ECTS Grade": "B"
+  },
+  {
+    "Year": "2nd Year",
+    "Subject": "Corporate Finance and Project Evaluation",
+    "Numeric Grade": 18,
+    "ECTS Grade": "A"
+  },
+  {
+    "Year": "2nd Year",
+    "Subject": "Principles of Economics",
+    "Numeric Grade": 18,
+    "ECTS Grade": "A"
+  }
+]
