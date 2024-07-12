@@ -34,11 +34,11 @@ function loadContent(path, project) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  loadContent("static/projects/sokoban.html", "sokoban");
-  loadContent("static/projects/musisys.html", "musisys");
+  loadContent("static/projects/OOP/sokoban.html", "sokoban");
+  loadContent("static/projects/DB/musisys.html", "musisys");
   loadContent("education.html", "education");
   loadContent("certifications.html", "certifications");
-  loadContent("static/projects/uma.html", "uma");
+  loadContent("static/projects/UMA/uma.html", "uma");
   loadContent("skills.html", "skills");
 
   /* -----------------------------------------
