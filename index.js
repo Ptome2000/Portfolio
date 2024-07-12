@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   loadContent("education.html", "education");
   loadContent("certifications.html", "certifications");
   loadContent("static/projects/uma.html", "uma");
+  loadContent("skills.html", "skills");
 
   /* -----------------------------------------
             Get Bachelor Grades
@@ -53,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
       years.forEach((year) => {
         // Create a column with a table for each year
         const col = document.createElement("div");
-        col.className = "col-6";
+        col.className = "col";
 
         const yearData = data.filter((item) => item.Year === year);
 
