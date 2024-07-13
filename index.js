@@ -33,6 +33,31 @@ function loadContent(path, project) {
     .catch((error) => console.error("Error loading content:", error));
 }
 
+/* -----------------------------------------
+            Load Gallery Images from folder path
+ ---------------------------------------- */
+
+function loadGallery(file, gallery) {
+  fetch(file)
+    .then((response) => response.json())
+    .then((data) => {
+      const path = data.path;
+      const images = data.images;
+      const parentElement = document.getElementById(gallery);
+
+      images.forEach(filename => {
+        const colElement = document.createElement("col");
+        const imgElement = document.createElement("img");
+        imgElement.src = `${path}/${filename}`;
+        imgElement.alt = filename;
+        imgElement.className = "img-fluid rounded";
+        colElement.appendChild(imgElement);
+        parentElement.appendChild(colElement);
+      });
+    })
+    .catch((error) => console.error("Error fetching images:", error));
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   loadContent("static/projects/OOP/sokoban.html", "sokoban");
   loadContent("static/projects/DB/musisys.html", "musisys");
@@ -40,6 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
   loadContent("certifications.html", "certifications");
   loadContent("static/projects/UMA/uma.html", "uma");
   loadContent("skills.html", "skills");
+  loadContent("static/projects/DIMA/fenix.html", "fenix");
+  loadGallery("static/projects/DIMA/fenix.json", "fenix-gallery");
 
   /* -----------------------------------------
             Get Bachelor Grades
@@ -106,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-/* -----------------------------------------
+  /* -----------------------------------------
           Back to the top button
  ---------------------------------------- */
 

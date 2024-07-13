@@ -4,7 +4,7 @@
   cursor: pointer;
 }
 
-header {
+header, footer {
   background-color: #404040;
 }
 
@@ -66,11 +66,9 @@ figure {
 .modal-body img {
   max-width: 100%;
   height: auto;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .modal-body img:hover {
-  transform: scale(1.8);
+  transform: scale(1.5);
   cursor: zoom-in;
 }
-
-    
